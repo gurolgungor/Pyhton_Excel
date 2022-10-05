@@ -11,7 +11,6 @@
 
 #Excel kitapligini yukluyoruz
 import openpyxl
-import os
 import sys
 
 #Excel dosyası yeri ve adi tanımlanır
@@ -25,7 +24,6 @@ sheet = workbook.active
 
 #A kolonu 1 satır güncellenir
 sheet["A1"].value = "Niyazi"
-
 
 #Excel dosyası kayıtedilir
 workbook.save(ExcelDosyasi)

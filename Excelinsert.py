@@ -11,6 +11,7 @@
 
 #Excel kitapligini yukluyoruz
 import xlsxwriter
+import sys
 
 #Excel dosyası yeri ve adi tanımlanır
 ExcelDosyasi = r"C:\Database\rehber.xlsx"
@@ -36,6 +37,8 @@ for Ad, Soyad in (tum_kayitlar):
     worksheet.write(row, col + 1, Soyad)
     row += 1
 
+#Ekrana Excel içerisine kayıt yazıldı basılır.
+print(ExcelDosyasi+" içerisine 3 kayıt yazıldı")
 
 # workbook cikmadan once kapatiyoruz.
 workbook.close()
